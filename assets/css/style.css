@@ -1,0 +1,1030 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+
+
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 999;
+
+}
+
+#overlay-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.349);
+    /* Semi-transparent black */
+    display: none;
+    /* Hidden by default */
+    z-index: 9997;
+    /* Ensure it's above other elements */
+}
+
+.icon-style {
+    z-index: 9999;
+}
+
+#nav-icon-1 {
+    z-index: 9999;
+}
+
+.nav-format-1 {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #ffff;
+    width: 70%;
+    display: none;
+    animation: width 1s ease forwards;
+}
+
+@keyframes width {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+.font {
+    font-size: 14px;
+}
+
+.header-tittle {
+    font-size: 0.8rem;
+}
+
+.logo-size {
+    max-width: 30px;
+}
+
+.nav-format {
+    font-weight: 700;
+
+}
+
+ul li {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-menu {
+
+    display: block;
+    opacity: 1;
+    animation: dropdown 1s ease forwards;
+}
+
+@keyframes dropdown {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0%;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+
+
+
+.input-group input {
+    padding: 5px;
+    font-size: 13px;
+
+}
+
+
+
+.hr-divider {
+    border-top: 2px solid black;
+    margin: 0%;
+}
+
+
+
+.colour-container {
+    color: #ffff;
+    background-color: #3a1910;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+
+#swiper-main-conatiner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+#swiper-main-conatiner .swiper .swiper-wrapper .swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel-caption,
+.button-adjust {
+    position: relative;
+
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+    background-color: #fff;
+
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: 50px;
+    height: 50px;
+    margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+/* Customize the size of the pagination bullets */
+#swiper-main-conatiner .swiper-pagination-bullet {
+    width: 10px;
+    /* Set your desired width */
+    height: 10px;
+    /* Set your desired height */
+    background-color: #fff;
+    /* Change the bullet color */
+    opacity: 1;
+    /* Adjust opacity for inactive bullets */
+}
+
+/* Customize the size and appearance of the active bullet */
+#swiper-main-conatiner .swiper-pagination-bullet-active {
+    width: 20px;
+    /* Set a larger size for the active bullet */
+    height: 20px;
+    /* Set a larger size for the active bullet */
+    background-color: #3a1910;
+    /* Change the color of the active bullet */
+    opacity: 1;
+    /* Make the active bullet fully opaque */
+}
+
+/* Position the pagination bullets at the bottom of the slider */
+#swiper-main-conatiner .swiper-pagination {
+    bottom: 10px;
+    /* Adjust the position from the bottom */
+    text-align: center;
+    /* Center the bullets horizontally */
+}
+
+#swiper-main-conatiner.swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+#swiper-main-conatiner.swiper.swiper-wrapper.swiper-slide {
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#swiper-main-conatiner .swiper-slide {
+    height: 450px;
+
+}
+
+#swiper-main-conatiner .swiper-wrapper {
+    height: 100%;
+
+}
+
+
+#swiper-main-conatiner .swiper .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#swiper-main-conatiner .swiper .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial); */
+    box-sizing: content-box;
+}
+
+
+
+
+.carousel-caption {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    bottom: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    /* Ensure text is visible */
+    z-index: 2;
+    animation: fadeInTop 2s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.carousel-caption h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.carousel-caption p {
+    font-size: 15px;
+    word-spacing: 2px;
+}
+
+.button-adjust {
+    border-color: #ffff;
+    color: #ffff;
+    width: 150px;
+    box-sizing: border-box;
+    border-radius: 0%;
+    z-index: 999;
+}
+
+@media (max-width:960px) {
+    .carousel-caption {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        right: 30%;
+        bottom: 40%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+
+    .carousel-caption h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+
+
+    #swiper-main-conatiner .swiper .swiper-wrapper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #swiper-main-conatiner .swiper-slide {
+        height: 300px;
+
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .carousel-caption {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        right: 25%;
+        bottom: 40%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    #swiper-main-conatiner .swiper .swiper-wrapper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #swiper-main-conatiner .swiper-slide {
+        height: 300px;
+
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+
+
+
+}
+
+@media (max-width:650px) {
+    .carousel-caption {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+        bottom: 40%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    #swiper-main-conatiner .swiper .swiper-wrapper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #swiper-main-conatiner .swiper-slide {
+        height: 300px;
+
+    }
+
+    .carousel-caption p {
+        font-size: 10px;
+        word-spacing: 2px;
+    }
+
+
+    .carousel-caption .button-adjust {
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .icon-discover {
+        font-size: 10px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 15px;
+    }
+
+    #swiper-main-conatiner .swiper-pagination-bullet {
+        width: 15px;
+        /* Set your desired width */
+        height: 15px;
+        /* Set your desired height */
+        background-color: #fff;
+        /* Change the bullet color */
+        opacity: 1;
+        /* Adjust opacity for inactive bullets */
+    }
+
+    /* Customize the size and appearance of the active bullet */
+    #swiper-main-conatiner .swiper-pagination-bullet-active {
+        width: 15px;
+        /* Set a larger size for the active bullet */
+        height: 15px;
+        /* Set a larger size for the active bullet */
+        background-color: #3a1910;
+        /* Change the color of the active bullet */
+        opacity: 1;
+        /* Make the active bullet fully opaque */
+    }
+}
+
+@media (max-width:550px) {
+
+
+    .carousel-caption {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+        bottom: 40%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .carousel-caption h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #swiper-main-conatiner .swiper .swiper-wrapper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #swiper-main-conatiner .swiper-slide {
+        height: 300px;
+
+    }
+
+    .carousel-caption p {
+        font-size: 10px;
+        word-spacing: 2px;
+    }
+
+
+    .carousel-caption .button-adjust {
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .icon-discover {
+        font-size: 10px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 10px;
+    }
+
+    #swiper-main-conatiner .swiper-pagination-bullet {
+        width: 10px;
+        /* Set your desired width */
+        height: 10px;
+        /* Set your desired height */
+        background-color: #fff;
+        /* Change the bullet color */
+        opacity: 1;
+        /* Adjust opacity for inactive bullets */
+    }
+
+    /* Customize the size and appearance of the active bullet */
+    #swiper-main-conatiner .swiper-pagination-bullet-active {
+        width: 10px;
+        /* Set a larger size for the active bullet */
+        height: 10px;
+        /* Set a larger size for the active bullet */
+        background-color: #3a1910;
+        /* Change the color of the active bullet */
+        opacity: 1;
+        /* Make the active bullet fully opaque */
+    }
+}
+
+@media (max-width:450px) {
+
+    .carousel-caption {
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        right: 18%;
+        bottom: 40%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .carousel-caption h1 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    #swiper-main-conatiner .swiper .swiper-wrapper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #swiper-main-conatiner .swiper-slide {
+        height: 200px;
+
+    }
+
+    .carousel-caption p {
+        font-size: 10px;
+        word-spacing: 2px;
+    }
+
+
+    .carousel-caption .button-adjust {
+        font-size: 8px;
+        width: 80px;
+    }
+
+    .icon-discover {
+        font-size: 10px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 10px;
+    }
+
+    #swiper-main-conatiner .swiper-pagination-bullet {
+        width: 10px;
+        /* Set your desired width */
+        height: 10px;
+        /* Set your desired height */
+        background-color: #fff;
+        /* Change the bullet color */
+        opacity: 1;
+        /* Adjust opacity for inactive bullets */
+    }
+
+    /* Customize the size and appearance of the active bullet */
+    #swiper-main-conatiner .swiper-pagination-bullet-active {
+        width: 10px;
+        /* Set a larger size for the active bullet */
+        height: 10px;
+        /* Set a larger size for the active bullet */
+        background-color: #3a1910;
+        /* Change the color of the active bullet */
+        opacity: 1;
+        /* Make the active bullet fully opaque */
+    }
+
+}
+
+
+
+.container-colour {
+    background-color: #fdefe5;
+}
+
+.column-border {
+    border: 2px solid #e5e5e5;
+
+}
+
+.column-border:hover {
+    border: 2px solid black;
+}
+
+.image-width {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.text-size {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #fdefe5;
+}
+
+.footer h5 {
+    color: #906642;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+.footer a:hover {
+    color: red;
+}
+
+.footer p {
+    font-size: 0.8rem;
+}
+
+footer ul li {
+    padding: 2%;
+}
+
+.footer-logo {
+    width: 180px;
+    height: 71px;
+}
+
+.contactus-p {
+    color: #bfbfbf;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.span-text {
+
+    color: #bfbfbf;
+
+}
+
+.map-embed {
+    overflow: hidden;
+}
+
+.card-tittle {
+    font-size: 12px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: red;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+@media (max-width:960px) {
+    .card {
+        height: 100%;
+    }
+
+}
+
+@media (max-width:720px) {
+    .card {
+        height: 100%;
+    }
+
+}
+
+@media (max-width:540px) {
+    .card {
+        height: 100%;
+    }
+
+}
+
+
+.sale-badge {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: red;
+    color: #ffff;
+    font-size: 12px;
+
+}
+
+.line-height-custom {
+    line-height: 1.9rem;
+}
+
+.overlay-image {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Adjust height as needed */
+    background-image: url('../images/rosaline_furniture_store_banner_simple_and_clean_minimal_dark_b_91bf6c1f-bd46-423c-8f96-8af8ca0fe08f.png');
+    /* Replace with your image path */
+    background-position: center;
+    background-size: cover;
+}
+
+.whatsapp-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #25d366;
+    z-index: 1000;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.whatsapp-chat {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.whatsapp-chat-header {
+    padding: 10px;
+    background: #25d366;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-sizing: b
+}
+
+.whatsapp-chat-body {
+    padding: 10px;
+}
+
+.whatsapp-chat-body a {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #333;
+    border-left: 2px solid #25d366;
+    text-decoration: none;
+    background-color: #ddd;
+
+}
+
+.whatsapp-chat-body a:hover {
+    background-color: #f9f9f9;
+    box-shadow: 2px 3px 10px;
+
+}
+
+
+/* navpils */
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #888;
+    background-color: #f8f9fa0a;
+}
+
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: -0.1rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #888888;
+    --bs-nav-link-hover-color: none;
+    --bs-nav-link-disabled-color: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.btn .nav-link .active {
+    background-color: transparent;
+    border-radius: 0;
+    color: #888;
+    outline: none;
+    border: none;
+    box-shadow: none;
+
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-pills .nav-link.active.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+
+/* swiper  */
+.swiper {
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+.swiper-slide {
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 350px;
+
+}
+
+
+.image-card-1 {
+    height: 180px;
+    display: flex;
+    width: 100%;
+
+}
+
+/* .image-card-1 img {
+            overflow: hidden;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }  */
+.image-card {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-image-top {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transform: translateY(10%);
+    transition: .5s ease;
+}
+
+.image-card:hover .overlay {
+    height: auto;
+    transform: translateY(-100%);
+
+}
+
+.card-icon {
+    background-color: #ffff;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+
+    text-align: center;
+}
+
+.card-icon:hover {
+    background-color: #3a1910;
+    color: #ffff;
+
+}
+
+.swiper-pagination-bullet {
+    background-color: #3a1910;
+
+
+}
+
+.swiper-pagination-container {
+    position: relative;
+    padding-bottom: 40px;
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -20px;
+
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+
+}
+
+/* additinal css
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    --bs-gutter-x: 1rem;
+} */
